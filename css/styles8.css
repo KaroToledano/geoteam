@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3e8ee; /* Fondo rosa para la página */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  min-height: 100vh; /* Asegura que el contenido ocupe al menos el 100% del alto de la ventana */
+}
+
+#container {
+  background-color: #fff; /* Fondo blanco para el contenedor principal */
+  padding: 200px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.rating {
+  display: flex;
+  justify-content: center; /* Centra los elementos de la clase 'rating' horizontalmente */
+  margin-bottom: 20px;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 100px;
+  color: #ccc;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.rating label:hover,
+.rating input:checked ~ label {
+  color: orange;
+}
+
+#submitBtn {
+  padding: 40px 60px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ff91a9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+#submitBtn:hover {
+  background-color: #af0993;
+}
+
+#message {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.boton {
+  padding: 40px 60px;
+  font-size: 30px;
+  text-decoration: none;
+  background-color: #ff91a9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #af0993;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="/css/styles3.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Iniciar Sesión</h1>
+    </header>
+    <div class="container">
+      <div class="login-box">
+        <p>Inicia sesión para continuar</p>
+        <form action="/login" method="POST">
+          <h4>Nombre de Usuario</h4>
+          <input type="text" id="usuario" name="usuario" required />
+          <h4>Contraseña</h4>
+          <input type="password" id="contrasena" name="contrasena" required />
+
+          <section id="botones">
+            <a href="/html/interfza.html" class="boton">Regresar</a>
+            <button class="boton" type="submit">Ingresar</button>
+          </section>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

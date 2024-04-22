@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Mi App de Seguridad</title>
+</head>
+
+<body>
+    <center>
+        <header>
+            <h1></h1>
+        </header>
+        <div class="container">
+            <h2>Registrarse</h2>
+            <label for="yaestasregistrado" style="color: blue;"><a href="iniciosesion.html"">¿Ya estás registrad@?</a></label><br><br>
+                
+        <section id="formulario">
+            <h2></h2>
+            <form action="/registro" method="POST" onsubmit="return validarFormulario()">
+                <label for="nombre">Nombre:</label> <br>
+                <input type="text" id="nombre" name="nombre" required  class="styled-input" placeholder="Ingrese su nombre completo"><br><br>
+
+                <label for="usuario">Usuario:</label> <br>
+                <input type="text" id="usuario" name="usuario" required class="styled-input" placeholder="Ingrese un nombre de usuario"><br><br>
+
+                <label for="contrasena">Contraseña:</label> <br>
+                <input type="password" id="contrasena" name="contrasena" required class="styled-input" placeholder="Ingrese una contraseña"><br><br>
+
+                <label for="anio_nacimiento">Año de Nacimiento:</label> <br>
+                <input type="number" id="anio_nacimiento" name="anio_nacimiento" min="1980" max="2008" required class="styled-input" placeholder="Año de nacimiento"><br><br>
+
+                <input type="checkbox" id="terminos_condiciones" name="terminos_condiciones" required>
+                <label for="terminos_condiciones" style="color: blue;"><a href="terminos.html" onclick="mostrarTerminos()">Leer términos y condiciones</a></label><br><br>
+                
+
+                <!-- <input type="submit" value="Registrarse"> -->
+                <a href="/html/interfza.html" class="boton">Regresar</a>
+                <a type="submit" href="/html/interfza.html" class="button-link"><button class="custom-button">Entendido</button></a>
+
+            </form>
+        </section>
+
+        <!-- <section id="botones">
+            <a href="iniciar-sesion.html" class="boton">Iniciar Sesión</a>
+            <a href="registrarse.html" class="boton" type="submit"> Registarse</a>
+            <button type="submit" class="boton">Registrar</button>
+        </section> -->
+        </div>
+
+        <footer>
+            <h0>&copy; 2024 Mi App de Seguridad</h0>
+        </footer>
+    </center>
+
+    <!--términos y condiciones -->
+    <section id="terminos" style="display: none;">
+        <h2>Términos y Condiciones</h2>
+        <p>Aquí van tus términos y condiciones...</p>
+    </section>
+
+    <script>
+        function validarFormulario() {
+            if (!document.getElementById('terminos_condiciones').checked) {
+                alert('Debes aceptar los términos y condiciones para registrarte.');
+                return false;
+            }
+            return true;
+        }
+
+        function mostrarTerminos() {
+        
+            document.getElementById("terminos").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

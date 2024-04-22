@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3e8ee;
+}
+
+header {
+    background-color: #ff91a9;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#bienvenida {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#botones {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ff91a9;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+footer {
+    background-color: #ff91a9;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 500px) {
+    #bienvenida {
+        margin: 10px;
+    }
+    #botones {
+        margin-top: 10px;
+    }
+    .boton {
+        margin: 5px;
+    }
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff91a9;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/*PARTTES AÑADIDAS DE KARO
+PARA registro.html y terminos.html*/
+h5 {
+    text-align: justify;
+}
+
+.custom-button {
+    background-color: #ff91a9; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Espaciado interior */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Mostrar como elemento en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen exterior */
+    cursor: pointer; /* Cursor al pasar el ratón */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+.custom-button:hover {
+    background-color: #ff91a9; /* Cambio de color al pasar el ratón */
+}
+
+.button-link {
+    text-decoration: none; /* Sin subrayado para el enlace */
+}
+
+.button-link:hover {
+    text-decoration: none; /* Sin subrayado al pasar el ratón */
+}
+
+.styled-input {
+    padding: 12px; /* Espaciado interior */
+    border: 1px solid #ccc; /* Borde con color gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    width: 400px; /* Ancho del input */
+    background-color: #fff9f9;
+    box-sizing: border-box; /* Tamaño total incluyendo el borde */
+}
+
+.styled-input:focus {
+    border-color: #007bff; /* Cambio de color del borde al obtener el foco */
+    outline: none; /* Sin contorno al obtener el foco */
+}

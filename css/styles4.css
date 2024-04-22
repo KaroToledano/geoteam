@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3e8ee;
+}
+
+header {
+  background-color: #ff91a9;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+#bienvenida {
+  text-align: center;
+  padding: 50px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+#botones {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.boton2 {
+  display: inline-block;
+  padding: 20px 20px;
+  width: 50px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ff91a9;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.boton {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #ff91a9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 23px;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+  line-height: 200px;
+}
+button {
+  padding: 20px;
+  background-color: #ff91a9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #af0993;
+}
+
+#deleteAccount,
+#goBack {
+  background-color: #dc3545;
+  /* Color rojo */
+}
+
+#deleteAccount:hover,
+#goBack:hover {
+  background-color: #bd2130;
+  /* Color rojo oscuro */
+}
+
+footer {
+  background-color: #ff91a9;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+p {
+  text-align: justify;
+}
+
+#goBack:hover {
+  background-color: #bd2130;
+  /* Color rojo oscuro */
+}
+
+@media screen and (max-width: 500px) {
+  #bienvenida {
+    margin: 10px;
+  }
+  #botones {
+    margin-top: 10px;
+  }
+  .boton {
+    margin: 5px;
+  }
+}
